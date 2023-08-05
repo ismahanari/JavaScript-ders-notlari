@@ -6,7 +6,7 @@
     
     <title>Document</title>
 
-    <style>
+    <!--<style>
         #greeting1{
             color: brown;
         }
@@ -16,7 +16,8 @@
         .text-danger {
             color: red;
         }
-    </style>
+    </style>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
     <h1 id="greeting">Kodluyoruz</h1>
@@ -44,14 +45,40 @@
     <button id="increase">Arttır</button>
     <button id="decrease">Azalt</button>
 
-   <!-- <script src="js/01-degisken.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <form id="userForm" method="get">
+                    <label for="username">Kullanıcı Adı : </label>
+                    <input type="text" name="username" id="username"> <br>
+                    <label for="score">Puan : </label>
+                    <input type="number" name="score" id="score">
+                    <br>
+                    <button type="submit" class="btn btn-success">Gönder</button>
+                    <button type="reset" class="btn btn-danger">Sil</button>
+                    <div class="col-sm-8 offset-sm-2">
+                        <ul class="list-group" id="userList">
+                           <!-- <li class="list-group-item d-flex justify-content-between align-items-lg-center">
+                                cras justo adio
+                                <span class="badge bg-primary rounded-pill">14</span>
+                            </li> -->
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- <script src="js/01-degisken.js"></script>
     <script src="js/02-DOM.js"></script> 
     <script src="js/03-kararYapıları.js"></script>  
     <script src="js/04-ornek1.js"></script> 
     <script src="js/05-fonk.js"></script> 
     <script src="js/06-fonk2.js"></script> 
-    <script src="js/07-DOM-etk.js"></script> -->
+    <script src="js/07-DOM-etk.js"></script> 
     <script src="js/08-localS.js"></script>
-    
+    <script src="js/09-Form.js"></script>  
+    <script src="js/10-form_örnek.js"></script>    -->
+    <script src="js/11-Array_dizi.js"></script>
 </body>
 </html>
