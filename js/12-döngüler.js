@@ -14,12 +14,6 @@ for(; index<10; index++){
 
 // sayfada göstermeyi sağlar.
 
-const userListDOM = document.querySelector(`#userlist`)
-for(index=0; index < users.length; index++){
-    const liDOM = document.createElement(`li`) //liste içerisinde li açtık
-    liDOM.innerHTML = users[index]  // bilgiyi li ye atadık
-    userListDOM.appendChild(liDOM) // listeye eklendi
-}
 
 /*
 Break:
