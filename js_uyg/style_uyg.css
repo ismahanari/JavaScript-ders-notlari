@@ -47,4 +47,13 @@ button{
     margin-top: 20px;
     
 }
+.g_button{
+    height: 10px;
+    width: 30px;
+    display: inline-block;
+    color: white;
+    margin-left: 80%;
+    padding-left: 10px;
+    cursor: pointer;
+}
 
