@@ -7,27 +7,42 @@
     <link rel="stylesheet" href="style_uyg.css">
     
 </head>
-<body>
+<body onload="All()">
     
-    <div id="hepsi">
+    <div id="divv">
         <div id="h1" class="h"><h1>- To Do -</h1></div>
     
         <div id="h2" class="h"><h2>Yapılacaklar Listesi</h2></div>
 
-        <div id="ib" class="h">
-        <input id="input" type="text" placeholder="Bugün ne yapacaksın?">
-        <button id="btn">Ekle</button> 
-        <button id="btn2" onclick="deleteRow()">Sil</button>
+        <div id="ib" class="h" >
+            <form class="e_s_f" >
+                <input id="input" class="inp" type="text" placeholder="Bugün ne yapacaksın?">
+                <button id="btn" onclick="add(event)">Ekle</button> 
+            </form>
+
+            <form class="update_form" >
+                <input type="text" hidden class="id">
+                <input type="text" class="uname">
+                
+               <!-- <button type="button" onclick="update()">Güncelle</button>-->
+            </form>
+            <div class="add_div">
+                <button onclick="update()" >EKLE</button>
+            </div>
+
+            <table id="myTable">
+                <tbody class="data_table">
+    
+                </tbody>
+                <!--<tr><td class="td">yemek yap <button class="g_button"></button> </td></tr>
+                <tr><td class="td">3 litre su iç <button class="g_button"></button></td> </tr> -->
+                
+                
+            </table>
         </div>
+        
     </div>
-    <div id="liste">
-        <table id="myTable">
-            <!--<tr><td class="td">yemek yap <button class="g_button"></button> </td></tr>
-            <tr><td class="td">3 litre su iç <button class="g_button"></button></td> </tr> -->
-            
-            
-        </table>
-    </div>
+    
     
     <script src="uyg.js"></script>
     

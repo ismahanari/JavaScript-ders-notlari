@@ -76,3 +76,63 @@ values.forEach(valuesInfo => {
 ** Dot notation: obj.property 
 ** Square brackets notation obj[“property”]. Bu özellik key'in obj[varWithKey] gibi bir değişkenden alınmasına izin verir.
 */
+
+
+// Method Ekleme
+
+let user = {
+    firstName: "İsmahan",
+    lastName: "Arı",
+    shortName: function(){
+        return `${this.firstName[0].toUpperCase()}.${this.lastName}`
+    } }
+
+console.log(user)
+
+// Object ve Array Destructuring 
+//Destructuring bir obje veya bir array içinden her bir elemanın alınıp bir değişken içine kaydedilmesi.
+
+let settings = {
+    userName : "LoremIpsum",
+    password: "BadPassword",
+    isActive: false,
+    ip: "127.0.0.1",
+    serverName:"kodluyoruz.org"
+}
+
+//obje içerisindeki bilgilerin tek seferde çıkarılması
+/* let userName = settings.userName
+console.log(userName) */
+
+// rename && destructuring
+let {userName:user1 , password, isActive, ip:serverIP, serverName} = settings
+console.log(user1, password, isActive, serverIP, serverName)
+console.log(settings)
+console.log(user1)
+
+//obje içindeki bazı bilgilerin çıkarılması (objeyi kesme işlemi)
+
+let {userName:userName2, password:password2, isActive:isActive2, ...newSettings} = settings
+console.log(userName2, password2, isActive2, newSettings)
+
+// objenin destructuring ile kopyalanması
+
+/* hatalı kullanım
+let settings2 = settings
+settings2.userName = "değişen bilgi"
+console.log("settings", settings)
+console.log("settings2", settings)  
+*/
+
+
+// doğru kullanım
+let settings2 = {...settings}
+console.log("settings", settings)
+console.log("settings2", settings)
+
+let score = [100, 200, 300, 400] 
+let [score1, score2, ...otherScore] = score
+console.log(score1, score2, otherScore)
+
+let copyScore = [...score]
+console.log(copyScore)
