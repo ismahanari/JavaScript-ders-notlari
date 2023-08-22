@@ -19,16 +19,20 @@
                 <input id="input" class="inp" type="text" placeholder="Bugün ne yapacaksın?">
                 <button id="btn" onclick="add(event)">Ekle</button> 
             </form>
-
-            <form class="update_form" >
-                <input type="text" hidden class="id">
-                <input type="text" class="uname">
-                
-               <!-- <button type="button" onclick="update()">Güncelle</button>-->
-            </form>
-            <div class="add_div">
-                <button onclick="update()" >EKLE</button>
+            <div class="kutu">
+                <div class="frm">
+                    <form class="update_form" >
+                        <input type="text" hidden class="id">
+                        <input type="text" class="uname" placeholder="...">
+                    </form>
+                </div>
+                <div class="add_div">
+                    <button class="btnn" onclick="update()">Güncel Ekle</button>
+                </div>
             </div>
+            
+
+            
 
             <table id="myTable">
                 <tbody class="data_table">

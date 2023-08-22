@@ -125,6 +125,7 @@ function update() {
     document.querySelector(".uname").value = ""
     All()
 }
+
 function delet(id){
     data = data.filter(rec => rec.id !== id);
     All()   

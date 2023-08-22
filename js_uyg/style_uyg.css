@@ -1,4 +1,4 @@
-#divv{
+body{
     background-color:orange;
     width: 90%;
     height: 220px;
@@ -9,10 +9,10 @@
 }
 
 #h1{
-    color: orange;
+    color: white;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: white;
+    background-color: orange;
     width: 24%;
     margin: auto;
     height: 50px;
@@ -41,19 +41,37 @@ button{
     width: 90%;
     margin: auto;
     color: white;
+    
 }
 
 #liste{
     margin-top: 20px;
     
 }
-.g_button{
-    height: 10px;
-    width: 30px;
-    display: inline-block;
-    color: white;
-    margin-left: 80%;
-    padding-left: 10px;
-    cursor: pointer;
+
+
+.e_s_f{
+    margin-bottom: 10px;
+}
+.kutu{
+    margin-bottom: 30px;
 }
 
+.edit , #btn , .delete{
+    border-color: firebrick;
+    width: 80px;
+    background-color: khaki;
+    color: firebrick;
+}
+.btnn{
+    border-color: firebrick;
+    width: 90px;
+    background-color: khaki;
+    color: firebrick;
+    
+}
+
+td{
+    color: firebrick;
+    font-size: 22px;
+}
